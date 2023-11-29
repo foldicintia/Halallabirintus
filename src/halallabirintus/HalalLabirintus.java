@@ -26,20 +26,313 @@ public class HalalLabirintus extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
+        tbbMenu = new javax.swing.JTabbedPane();
+        jPanel1 = new javax.swing.JPanel();
+        pnlLeiras = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txaLeiras = new javax.swing.JTextArea();
+        pnlKepessegek = new javax.swing.JPanel();
+        lblUgyesseg = new javax.swing.JLabel();
+        lblEletero = new javax.swing.JLabel();
+        lblSzerencse = new javax.swing.JLabel();
+        txfUgyesseg = new javax.swing.JTextField();
+        txfEletero = new javax.swing.JTextField();
+        txfSzerencse = new javax.swing.JTextField();
+        btnUgyesseg = new javax.swing.JButton();
+        btnEletero = new javax.swing.JButton();
+        btnSzerencse = new javax.swing.JButton();
+        btnStart = new javax.swing.JButton();
+        pnlKep0 = new javax.swing.JPanel();
+        lblKep0 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        pnlKep1 = new javax.swing.JPanel();
+        lblKep1 = new javax.swing.JLabel();
+        pnlSzoveg1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txaSzoveg1 = new javax.swing.JTextArea();
+        btnOldal270 = new javax.swing.JButton();
+        btnOldal66 = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Halállabirintus");
+        setMinimumSize(new java.awt.Dimension(750, 500));
+
+        tbbMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 0, 0)));
+
+        pnlLeiras.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Leírás", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tempus Sans ITC", 1, 18), new java.awt.Color(153, 0, 0))); // NOI18N
+        pnlLeiras.setForeground(new java.awt.Color(153, 0, 0));
+
+        txaLeiras.setColumns(20);
+        txaLeiras.setRows(5);
+        txaLeiras.setText("A feladat, egy régen népszerű „lapozgatós könyv” számítógépes verziójának elkészítése.\n Az eredeti könyv úgy működött, hogy elolvastad az 1. oldalt, majd választanod kellett, hogy hova lapozol tovább. \nÍgy ugrálva kellett végig haladni,és feltételezték, hogy nem lapozol vissza, ha rosszat választottál, \nilletve a csatákban sem csaltál.");
+        jScrollPane2.setViewportView(txaLeiras);
+
+        javax.swing.GroupLayout pnlLeirasLayout = new javax.swing.GroupLayout(pnlLeiras);
+        pnlLeiras.setLayout(pnlLeirasLayout);
+        pnlLeirasLayout.setHorizontalGroup(
+            pnlLeirasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlLeirasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 635, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pnlLeirasLayout.setVerticalGroup(
+            pnlLeirasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlLeirasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pnlKepessegek.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Képességek", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tempus Sans ITC", 1, 18), new java.awt.Color(153, 0, 0))); // NOI18N
+
+        lblUgyesseg.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblUgyesseg.setText("Ügyesség");
+
+        lblEletero.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblEletero.setText("Életerő");
+
+        lblSzerencse.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblSzerencse.setText("Szerencse");
+
+        btnUgyesseg.setBackground(new java.awt.Color(153, 0, 0));
+        btnUgyesseg.setForeground(new java.awt.Color(255, 255, 255));
+        btnUgyesseg.setText("Dobj!");
+
+        btnEletero.setBackground(new java.awt.Color(153, 0, 0));
+        btnEletero.setForeground(new java.awt.Color(255, 255, 255));
+        btnEletero.setText("Dobj!");
+
+        btnSzerencse.setBackground(new java.awt.Color(153, 0, 0));
+        btnSzerencse.setForeground(new java.awt.Color(255, 255, 255));
+        btnSzerencse.setText("Dobj!");
+
+        javax.swing.GroupLayout pnlKepessegekLayout = new javax.swing.GroupLayout(pnlKepessegek);
+        pnlKepessegek.setLayout(pnlKepessegekLayout);
+        pnlKepessegekLayout.setHorizontalGroup(
+            pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlKepessegekLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblUgyesseg)
+                    .addComponent(lblEletero)
+                    .addComponent(lblSzerencse))
+                .addGap(18, 34, Short.MAX_VALUE)
+                .addGroup(pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(txfUgyesseg, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txfEletero, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txfSzerencse, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addGroup(pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(btnUgyesseg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnEletero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSzerencse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(17, 17, 17))
+        );
+        pnlKepessegekLayout.setVerticalGroup(
+            pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlKepessegekLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addGroup(pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txfUgyesseg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUgyesseg)
+                    .addComponent(btnUgyesseg))
+                .addGap(18, 18, 18)
+                .addGroup(pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblEletero)
+                    .addComponent(txfEletero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEletero))
+                .addGap(18, 18, 18)
+                .addGroup(pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSzerencse)
+                    .addComponent(txfSzerencse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSzerencse))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        btnStart.setBackground(new java.awt.Color(153, 0, 0));
+        btnStart.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        btnStart.setForeground(new java.awt.Color(255, 255, 255));
+        btnStart.setText("START");
+
+        pnlKep0.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 0, 0)));
+
+        lblKep0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/labi_1.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout pnlKep0Layout = new javax.swing.GroupLayout(pnlKep0);
+        pnlKep0.setLayout(pnlKep0Layout);
+        pnlKep0Layout.setHorizontalGroup(
+            pnlKep0Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlKep0Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblKep0)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        pnlKep0Layout.setVerticalGroup(
+            pnlKep0Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlKep0Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblKep0)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(pnlLeiras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 16, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(pnlKepessegek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(pnlKep0, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(271, 271, 271)
+                .addComponent(btnStart, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(pnlLeiras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(pnlKep0, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlKepessegek, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btnStart)
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+
+        tbbMenu.addTab("Kezdőlap", jPanel1);
+
+        pnlKep1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 0, 0)));
+
+        lblKep1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/1. oldal.png"))); // NOI18N
+
+        javax.swing.GroupLayout pnlKep1Layout = new javax.swing.GroupLayout(pnlKep1);
+        pnlKep1.setLayout(pnlKep1Layout);
+        pnlKep1Layout.setHorizontalGroup(
+            pnlKep1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlKep1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblKep1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        pnlKep1Layout.setVerticalGroup(
+            pnlKep1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlKep1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblKep1, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pnlSzoveg1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 0, 0)));
+
+        jScrollPane1.setEnabled(false);
+        jScrollPane1.setHorizontalScrollBar(null);
+
+        txaSzoveg1.setColumns(20);
+        txaSzoveg1.setRows(5);
+        txaSzoveg1.setText("1 oldal\nMiután öt percet haladtál lassan az \nalagútban, egy kőasztalhoz érsz, amely a\n bal oldali fal mellett áll. Hat doboz van\n rajta, egyikükre a te neved festették. Ha \nkiakarod nyitni a dobozt, lapozz a 270-re.\n Ha inkább tovább haladsz észak felé,\n lapozz a 66-ra.\n");
+        jScrollPane1.setViewportView(txaSzoveg1);
+
+        btnOldal270.setBackground(new java.awt.Color(153, 0, 0));
+        btnOldal270.setForeground(new java.awt.Color(255, 255, 255));
+        btnOldal270.setText("270");
+
+        btnOldal66.setBackground(new java.awt.Color(153, 0, 0));
+        btnOldal66.setForeground(new java.awt.Color(255, 255, 255));
+        btnOldal66.setText("66");
+
+        javax.swing.GroupLayout pnlSzoveg1Layout = new javax.swing.GroupLayout(pnlSzoveg1);
+        pnlSzoveg1.setLayout(pnlSzoveg1Layout);
+        pnlSzoveg1Layout.setHorizontalGroup(
+            pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlSzoveg1Layout.createSequentialGroup()
+                .addGroup(pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlSzoveg1Layout.createSequentialGroup()
+                        .addGap(62, 62, 62)
+                        .addComponent(btnOldal270)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnOldal66))
+                    .addGroup(pnlSzoveg1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        pnlSzoveg1Layout.setVerticalGroup(
+            pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlSzoveg1Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnOldal270)
+                    .addComponent(btnOldal66))
+                .addGap(43, 43, 43))
+        );
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(pnlKep1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(89, 89, 89)
+                .addComponent(pnlSzoveg1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(44, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(pnlSzoveg1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pnlKep1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(77, 77, 77))
+        );
+
+        tbbMenu.addTab("Játék", jPanel3);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tbbMenu))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(tbbMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -78,5 +371,32 @@ public class HalalLabirintus extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnEletero;
+    private javax.swing.JButton btnOldal270;
+    private javax.swing.JButton btnOldal66;
+    private javax.swing.JButton btnStart;
+    private javax.swing.JButton btnSzerencse;
+    private javax.swing.JButton btnUgyesseg;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel lblEletero;
+    private javax.swing.JLabel lblKep0;
+    private javax.swing.JLabel lblKep1;
+    private javax.swing.JLabel lblSzerencse;
+    private javax.swing.JLabel lblUgyesseg;
+    private javax.swing.JPanel pnlKep0;
+    private javax.swing.JPanel pnlKep1;
+    private javax.swing.JPanel pnlKepessegek;
+    private javax.swing.JPanel pnlLeiras;
+    private javax.swing.JPanel pnlSzoveg1;
+    private javax.swing.JTabbedPane tbbMenu;
+    private javax.swing.JTextArea txaLeiras;
+    private javax.swing.JTextArea txaSzoveg1;
+    private javax.swing.JTextField txfEletero;
+    private javax.swing.JTextField txfSzerencse;
+    private javax.swing.JTextField txfUgyesseg;
     // End of variables declaration//GEN-END:variables
 }
