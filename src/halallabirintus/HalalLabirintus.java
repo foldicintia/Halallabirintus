@@ -51,8 +51,8 @@ public class HalalLabirintus extends javax.swing.JFrame {
         pnlSzoveg1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txaSzoveg1 = new javax.swing.JTextArea();
-        btnOldal270 = new javax.swing.JButton();
-        btnOldal66 = new javax.swing.JButton();
+        btnBal = new javax.swing.JButton();
+        btnJobb = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Halállabirintus");
@@ -99,6 +99,11 @@ public class HalalLabirintus extends javax.swing.JFrame {
         btnUgyesseg.setBackground(new java.awt.Color(153, 0, 0));
         btnUgyesseg.setForeground(new java.awt.Color(255, 255, 255));
         btnUgyesseg.setText("Dobj!");
+        btnUgyesseg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUgyessegActionPerformed(evt);
+            }
+        });
 
         btnEletero.setBackground(new java.awt.Color(153, 0, 0));
         btnEletero.setForeground(new java.awt.Color(255, 255, 255));
@@ -155,6 +160,11 @@ public class HalalLabirintus extends javax.swing.JFrame {
         btnStart.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         btnStart.setForeground(new java.awt.Color(255, 255, 255));
         btnStart.setText("START");
+        btnStart.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStartActionPerformed(evt);
+            }
+        });
 
         pnlKep0.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 0, 0)));
 
@@ -239,18 +249,25 @@ public class HalalLabirintus extends javax.swing.JFrame {
         jScrollPane1.setEnabled(false);
         jScrollPane1.setHorizontalScrollBar(null);
 
+        txaSzoveg1.setEditable(false);
         txaSzoveg1.setColumns(20);
         txaSzoveg1.setRows(5);
         txaSzoveg1.setText("1 oldal\nMiután öt percet haladtál lassan az \nalagútban, egy kőasztalhoz érsz, amely a\n bal oldali fal mellett áll. Hat doboz van\n rajta, egyikükre a te neved festették. Ha \nkiakarod nyitni a dobozt, lapozz a 270-re.\n Ha inkább tovább haladsz észak felé,\n lapozz a 66-ra.\n");
+        txaSzoveg1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jScrollPane1.setViewportView(txaSzoveg1);
 
-        btnOldal270.setBackground(new java.awt.Color(153, 0, 0));
-        btnOldal270.setForeground(new java.awt.Color(255, 255, 255));
-        btnOldal270.setText("270");
+        btnBal.setBackground(new java.awt.Color(153, 0, 0));
+        btnBal.setForeground(new java.awt.Color(255, 255, 255));
+        btnBal.setText("270");
+        btnBal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBalActionPerformed(evt);
+            }
+        });
 
-        btnOldal66.setBackground(new java.awt.Color(153, 0, 0));
-        btnOldal66.setForeground(new java.awt.Color(255, 255, 255));
-        btnOldal66.setText("66");
+        btnJobb.setBackground(new java.awt.Color(153, 0, 0));
+        btnJobb.setForeground(new java.awt.Color(255, 255, 255));
+        btnJobb.setText("66");
 
         javax.swing.GroupLayout pnlSzoveg1Layout = new javax.swing.GroupLayout(pnlSzoveg1);
         pnlSzoveg1.setLayout(pnlSzoveg1Layout);
@@ -260,9 +277,9 @@ public class HalalLabirintus extends javax.swing.JFrame {
                 .addGroup(pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlSzoveg1Layout.createSequentialGroup()
                         .addGap(62, 62, 62)
-                        .addComponent(btnOldal270)
+                        .addComponent(btnBal)
                         .addGap(18, 18, 18)
-                        .addComponent(btnOldal66))
+                        .addComponent(btnJobb))
                     .addGroup(pnlSzoveg1Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -275,8 +292,8 @@ public class HalalLabirintus extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnOldal270)
-                    .addComponent(btnOldal66))
+                    .addComponent(btnBal)
+                    .addComponent(btnJobb))
                 .addGap(43, 43, 43))
         );
 
@@ -335,10 +352,27 @@ public class HalalLabirintus extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
+       
+    }//GEN-LAST:event_btnStartActionPerformed
+
+    private void btnBalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBalActionPerformed
+        
+    }//GEN-LAST:event_btnBalActionPerformed
+
+    private void btnUgyessegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUgyessegActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnUgyessegActionPerformed
+
+
+
     /**
      * @param args the command line arguments
      */
+  
     public static void main(String args[]) {
+
+    
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -371,9 +405,9 @@ public class HalalLabirintus extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBal;
     private javax.swing.JButton btnEletero;
-    private javax.swing.JButton btnOldal270;
-    private javax.swing.JButton btnOldal66;
+    private javax.swing.JButton btnJobb;
     private javax.swing.JButton btnStart;
     private javax.swing.JButton btnSzerencse;
     private javax.swing.JButton btnUgyesseg;

@@ -285,6 +285,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="Dobj!"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUgyessegActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JButton" name="btnEletero">
                       <Properties>
@@ -323,6 +326,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="START"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnStartActionPerformed"/>
+                  </Events>
                 </Component>
                 <Container class="javax.swing.JPanel" name="pnlKep0">
                   <Properties>
@@ -461,9 +467,9 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                                      <Component id="btnOldal270" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnBal" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="btnOldal66" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnJobb" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
@@ -481,8 +487,8 @@
                               <Component id="jScrollPane1" min="-2" pref="164" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="btnOldal270" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnOldal66" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnBal" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnJobb" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                           </Group>
@@ -505,14 +511,18 @@
                       <SubComponents>
                         <Component class="javax.swing.JTextArea" name="txaSzoveg1">
                           <Properties>
+                            <Property name="editable" type="boolean" value="false"/>
                             <Property name="columns" type="int" value="20"/>
                             <Property name="rows" type="int" value="5"/>
                             <Property name="text" type="java.lang.String" value="1 oldal&#xa;Miut&#xe1;n &#xf6;t percet haladt&#xe1;l lassan az &#xa;alag&#xfa;tban, egy k&#x151;asztalhoz &#xe9;rsz, amely a&#xa; bal oldali fal mellett &#xe1;ll. Hat doboz van&#xa; rajta, egyik&#xfc;kre a te neved festett&#xe9;k. Ha &#xa;kiakarod nyitni a dobozt, lapozz a 270-re.&#xa; Ha ink&#xe1;bb tov&#xe1;bb haladsz &#xe9;szak fel&#xe9;,&#xa; lapozz a 66-ra.&#xa;"/>
+                            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                              <Color id="Text Cursor"/>
+                            </Property>
                           </Properties>
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Component class="javax.swing.JButton" name="btnOldal270">
+                    <Component class="javax.swing.JButton" name="btnBal">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="99" type="rgb"/>
@@ -522,8 +532,11 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="270"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBalActionPerformed"/>
+                      </Events>
                     </Component>
-                    <Component class="javax.swing.JButton" name="btnOldal66">
+                    <Component class="javax.swing.JButton" name="btnJobb">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="99" type="rgb"/>
